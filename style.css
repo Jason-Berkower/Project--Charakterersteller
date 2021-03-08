@@ -15,7 +15,7 @@
 
 #header h1 {
   text-transform: uppercase;
-  color: rgb(40, 40, 40);
+  color: white;
 }
 
 nav {
@@ -24,7 +24,7 @@ nav {
   padding-right: 50px;
   word-spacing: 200px;
   text-transform: uppercase;
-  color: rgb(40, 40, 40);
+  color: white;
   font-weight: bold;
 }
 
@@ -32,7 +32,8 @@ nav {
 body {
   margin: 0;
   padding: 0;
-  /* background-color: */
+  background-color: #12355B;
+  color: white;
 }
 
 #Introduction {
@@ -49,7 +50,7 @@ body {
   padding-left: 40px;
   padding-right: 40px;
   font-weight: bold;
-  color: rgb(40, 40, 40);
+  color: white;
   background-color: #d72638;
   border-radius: 10px;
   border-color: transparent;
