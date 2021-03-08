@@ -58,12 +58,12 @@ body {
 
 
 /* Footer Section */
-/* footer {
-  /* left: 0;
+footer {
+  left: 0;
   bottom: 0;
   width: 100vw;
-  text-align: center; */
-/* } */ */
+  text-align: center;
+}
 
 footer p {
   text-transform: uppercase;
