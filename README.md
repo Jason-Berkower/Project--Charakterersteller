@@ -46,7 +46,6 @@ https://imgur.com/a/BG9Q1CI
 #### PostMVP  
 
 - Add second API (possibly a third).
-- Try out designing a personal API for names.
 - Add a random art component to further inspiration.
 - Allow the user to download a .txt file including their randomly generated character.
 
