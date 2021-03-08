@@ -18,6 +18,15 @@
   color: rgb(40, 40, 40);
 }
 
+nav {
+  display: block;
+  text-align: right;
+  padding-right: 50px;
+  word-spacing: 200px;
+  text-transform: uppercase;
+  color: rgb(40, 40, 40);
+}
+
 /* General CSS */
 body {
   margin: 0;
