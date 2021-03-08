@@ -10,6 +10,7 @@ This project intends to serve as a foray into the realm of random character gene
 
 ## API and Data Sample
 
+Sample pulled from the public D&D 5e API.
 ```
 {
 	"index": "rogue",
