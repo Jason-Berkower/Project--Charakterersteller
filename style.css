@@ -37,6 +37,21 @@ body {
   margin-left: 20px;
 }
 
+#button1 {
+  text-align: center;
+}
+
+#generate {
+  text-transform: uppercase;
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-weight: bold;
+  color: rgb(40, 40, 40);
+  background-color: rgb(213, 52, 52);
+  border-radius: 10px;
+  border-color: transparent;
+}
 /* Content Section */
 
 
