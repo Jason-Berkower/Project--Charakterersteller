@@ -30,7 +30,7 @@ Sample pulled from the public D&D 5e API.
 
 ## Wireframes
 
-Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
+https://imgur.com/a/BG9Q1CI
 
 #### MVP 
 
