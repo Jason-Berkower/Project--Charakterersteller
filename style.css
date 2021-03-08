@@ -6,7 +6,7 @@
 /* Header Section */
 #header {
   display: block;
-  background-color: rgb(213, 52, 52);
+  background-color: #d72638;
   padding: 10px;
   width: 100vw;
   margin: 0;
@@ -25,12 +25,14 @@ nav {
   word-spacing: 200px;
   text-transform: uppercase;
   color: rgb(40, 40, 40);
+  font-weight: bold;
 }
 
 /* General CSS */
 body {
   margin: 0;
   padding: 0;
+  /* background-color: */
 }
 
 #Introduction {
@@ -48,7 +50,7 @@ body {
   padding-right: 40px;
   font-weight: bold;
   color: rgb(40, 40, 40);
-  background-color: rgb(213, 52, 52);
+  background-color: #d72638;
   border-radius: 10px;
   border-color: transparent;
 }
@@ -56,9 +58,19 @@ body {
 
 
 /* Footer Section */
+/* footer {
+  /* left: 0;
+  bottom: 0;
+  width: 100vw;
+  text-align: center; */
+/* } */ */
+
 footer p {
   text-transform: uppercase;
   text-align: center;
   font-weight: bold;
   font-size: 11px;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
 }
