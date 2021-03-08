@@ -56,4 +56,4 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Debugging | H | 4hrs | — | — |
 | Post-MVP Goals | M | 6hrs | — | — |
 | Post-MVP Debugging | M | 4hrs | — | — |
-| Total | H | 36hrs | — | — |
+| Total |  | 36hrs |  | — |
