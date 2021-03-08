@@ -10,7 +10,22 @@ This project intends to serve as a foray into the realm of random character gene
 
 ## API and Data Sample
 
-Specify the API you are using and include a link. Show us a snippet of JSON returned by your API so we know you can access it and get the info you need
+```
+{
+	"index": "rogue",
+	"name": "Rogue",
+	"hit_die": 8,
+	"proficiency_choices": [
+		{
+			"choose": 4,
+			"type": "proficiencies",
+			"from": [
+				{
+					"index": "skill-acrobatics",
+					"name": "Skill: Acrobatics",
+					"url": "/api/proficiencies/skill-acrobatics"
+				}
+```
 
 ## Wireframes
 
@@ -30,8 +45,10 @@ Upload images of your wireframes to an image hosting site or add them to an asse
 #### PostMVP  
 *These are examples only. Replace with your own Post-MVP features.*
 
-- Add second API
-- Use local storage to save user favorites
+- Add second API (possibly a third).
+- Try out designing a personal API for names.
+- Add a random art component to further inspiration.
+- Allow the user to download a .txt file including their randomly generated character.
 
 ## Priority Matrix
 
