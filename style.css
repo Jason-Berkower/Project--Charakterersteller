@@ -1,5 +1,7 @@
 /* Overall Body Section */
-
+* {
+  font-family: 'Oxygen', sans-serif;
+}
 
 /* Header Section */
 
@@ -14,4 +16,6 @@
 footer p {
   text-transform: uppercase;
   text-align: center;
+  font-weight: bold;
+  font-size: 11px;
 }
