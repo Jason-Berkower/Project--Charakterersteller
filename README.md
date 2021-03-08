@@ -43,7 +43,6 @@ Upload images of your wireframes to an image hosting site or add them to an asse
 8. A README.md file that contains your project worksheet, a link to your live, deployed site, and any necessary installation instructions such as npm i.
 
 #### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
 
 - Add second API (possibly a third).
 - Try out designing a personal API for names.
@@ -52,7 +51,7 @@ Upload images of your wireframes to an image hosting site or add them to an asse
 
 ## Priority Matrix
 
-Include a full list of features that have been prioritized based on the `Time and Importance` Matrix.  Link this image in a similar manner to your wireframes
+https://miro.com/app/board/o9J_lQwWurk=/
 
 ## Timeframes
 
