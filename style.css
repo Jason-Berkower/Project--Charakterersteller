@@ -131,6 +131,22 @@ body {
   border-color: transparent;
 }
 
+#randomize {
+  text-transform: uppercase;
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-weight: bold;
+  color: white;
+  background-color: #d72638;
+  border-radius: 10px;
+  border-color: transparent;
+}
+
+#button3 {
+  text-align: center;
+}
+
 /* Footer Section */
 footer {
   left: 0;
