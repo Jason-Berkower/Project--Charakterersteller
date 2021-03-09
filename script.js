@@ -23,21 +23,18 @@ async function grabDungeons() {
 }
 
 // Function to pick random race from API
-
 // Function to pick random class from API
-
 // Create Object with subclasses
-
 // Create Object with backgrounds
-
 // Function to roll attributes
-
 // Function to pick random languages
-
 // Function to pick random main weapon
-
 // Function to ick random secondary weapon
-
 // Function to roll starting wealth
-
 // Function to execute all random functions on button click
+
+
+// For the artboard, procure images
+// Create array for images
+// Create function to pull random images from array
+// Perhaps use variant of: https://stackoverflow.com/questions/9358090/show-random-images-from-a-folder-without-repeating-using-js-or-php
