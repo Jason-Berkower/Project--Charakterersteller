@@ -12,6 +12,7 @@ const BaseURL = 'https://www.dnd5eapi.co/api/';
 window.onload = function () {
   grabDungeons();
   getQuotes();
+  // getImages();
 }
 
 async function grabDungeons() {
