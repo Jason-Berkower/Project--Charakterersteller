@@ -9,6 +9,10 @@ const BaseURL = 'https://www.dnd5eapi.co/api/';
 // Add icing to the cake.
 // The cake is a lie...
 
+window.onload = function () {
+  grabDungeons();
+}
+
 async function grabDungeons() {
   try {
     let dungeons = await axios.get('https://www.dnd5eapi.co/api/');
@@ -17,5 +21,3 @@ async function grabDungeons() {
     console.log(err.message);
   }
 }
-
-grabDungeons();
