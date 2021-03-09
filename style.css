@@ -106,6 +106,22 @@ body {
   margin-bottom: 20px;
 }
 
+#button2 {
+  text-align: center;
+}
+
+#download {
+  text-transform: uppercase;
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-weight: bold;
+  color: white;
+  background-color: #d72638;
+  border-radius: 10px;
+  border-color: transparent;
+}
+
 /* Footer Section */
 footer {
   left: 0;

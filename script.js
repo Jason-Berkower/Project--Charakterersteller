@@ -24,7 +24,11 @@ async function grabDungeons() {
 
 // Function to pick random race from API
 
-// Function to pick random class and subclass from API
+// Function to pick random class from API
+
+// Create Object with subclasses
+
+// Create Object with backgrounds
 
 // Function to roll attributes
 
