@@ -112,6 +112,11 @@ footer {
   bottom: 0;
   width: 100vw;
   text-align: center;
+  display: block;
+  background-color: #d72638;
+  padding: 1px;
+  width: 100vw;
+  margin-top: 50px;
 }
 
 footer p {

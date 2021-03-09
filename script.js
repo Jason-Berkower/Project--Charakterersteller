@@ -21,3 +21,19 @@ async function grabDungeons() {
     console.log(err.message);
   }
 }
+
+// Function to pick random race from API
+
+// Function to pick random class and subclass from API
+
+// Function to roll attributes
+
+// Function to pick random languages
+
+// Function to pick random main weapon
+
+// Function to ick random secondary weapon
+
+// Function to roll starting wealth
+
+// Function to execute all random functions on button click
