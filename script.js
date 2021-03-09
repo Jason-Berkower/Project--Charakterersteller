@@ -33,6 +33,8 @@ async function grabDungeons() {
 // Function to roll starting wealth
 // Function to execute all random functions on button click
 
+// Second API will draw and present quotes to further flesh out characters. These quotes will be presented as mottos.
+
 
 // For the artboard, procure images
 // Create array for images
