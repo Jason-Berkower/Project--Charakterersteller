@@ -11,12 +11,22 @@ const BaseURL = 'https://www.dnd5eapi.co/api/';
 
 window.onload = function () {
   grabDungeons();
+  getQuotes();
 }
 
 async function grabDungeons() {
   try {
     let dungeons = await axios.get('https://www.dnd5eapi.co/api/');
     console.log(dungeons);
+  } catch (err) {
+    console.log(err.message);
+  }
+}
+
+async function getQuotes() {
+  try {
+    let mottos = await axios.get('https://api.quotable.io/random');
+    console.log(mottos);
   } catch (err) {
     console.log(err.message);
   }
