@@ -8,3 +8,14 @@ const BaseURL = 'https://www.dnd5eapi.co/api/';
 // Figure out how to let users download information as .txt document.
 // Add icing to the cake.
 // The cake is a lie...
+
+async function grabDungeons() {
+  try {
+    let dungeons = await axios.get('https://www.dnd5eapi.co/api/');
+    console.log(dungeons);
+  } catch (err) {
+    console.log(err.message);
+  }
+}
+
+grabDungeons();
