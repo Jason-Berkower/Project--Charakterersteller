@@ -41,9 +41,18 @@ async function getQuotes() {
 
 
 // Function to pick random race from API
-// function getRace() {
-
-// };
+async function getRace() {
+  try {
+    let dRace = await axios.get('https://www.dnd5eapi.co/api/races');
+    let raceArr = dRace.data.results;
+    // console.log(raceArr);
+    let randomRace = raceArr[Math.floor(Math.random() * raceArr.length)];
+    console.log(randomRace);
+    document.getElementById('g-race').value += randomRace[raceArr.value];
+  } catch (err) {
+    console.log(err.message);
+  }
+};
 function removeOldRace() {
   document.getElementById('g-race').value = "";
 };
@@ -72,14 +81,17 @@ let subClasses = {
   warlock: ['Archfey Patron', 'Celestial Patron', 'Fathomless Patron', 'Fiend Patron', 'Genie Patron', 'Great Old One Patron', 'Hexblade', 'Undying Patron'],
   wizard: ['Tradition of Abjuration', 'Tradition of Chronurgy', 'Tradition of Conjuration', 'Tradition of Divination', 'Tradition of Enchantment', 'Tradition of Evocation', 'Tradition of Graviturgy', 'Tradition of Illusion', 'Tradition of Necromancy', 'Tradition of the Scribes', 'Tradition of Transmutation', 'Tradition of War']
 };
-// function getSubClass() {
-
+// function getSubClass(obj) {
+//   let keys = Object.keys(obj);
+//   console.log(keys);
+//   return obj[keys[keys.length * Math.random() << 0]];
 // };
 function removeOldSubClass() {
   document.getElementById('g-subclass').value = "";
 };
 
 
+// Includes all backgrounds from PHB and SCAG
 let backgrounds = ['Acolyte', 'Charlatan', 'City Watch', 'City Watch (Investigator)', 'Clan Crafter', 'Cloistered Scholar', 'Courtier', 'Criminal', 'Criminal (Spy)', 'Entertainer', 'Entertainer (Gladiator)', 'Faction Agent', 'Far Traveler', 'Folk Hero', 'Guild Artisan', 'Guild Artisan (Guild Merchant)', 'Hermit', 'Inheritor', 'Knight of the Order', 'Mercenary Veteran', 'Noble', 'Noble (Knight)', 'Outlander', 'Sage', 'Sailor', 'Sailor (Pirate)', 'Soldier', 'Urban Bounty Hunter', 'Urchin'];
 function getBackground() {
   let randomBackground = backgrounds[Math.floor(Math.random() * backgrounds.length)];
@@ -145,7 +157,7 @@ function removeOldStartingWealth() {
 
 // Function to execute all random functions on button click
 function getNewCharacter() {
-  // getRace();
+  getRace();
   // getClass();
   // getSubClass();
   getBackground();
@@ -178,7 +190,7 @@ function removeOldMotto() {
 };
 
 
-// For the artboard, procure images
+// For the art board, procure images
 // Create array for images
 // function getArt() {
 
