@@ -17,6 +17,7 @@ window.onload = function () {
 }
 
 btn1.addEventListener('click', () => {
+  removeAllOld();
   getNewCharacter();
 });
 
@@ -70,6 +71,12 @@ function getBackground() {
   let randomBackground = backgrounds[Math.floor(Math.random() * backgrounds.length)];
   document.getElementById('g-background').value += randomBackground;
 };
+function removeOldBackground() {
+  document.getElementById('g-background').value = "";
+};
+// function removeOldBackground() {
+//   let background = document.getElementById('g-background');
+// };
 // Function to roll attributes
 function getAttributes() {
   let strength = document.querySelector('#g-attStr');
@@ -85,6 +92,7 @@ function getAttributes() {
   let charisma = document.querySelector('#g-attCha');
   charisma.value = Math.floor(Math.random() * 15) + 3;
 };
+
 // Function to pick random languages
 // function getLang() {
 
@@ -118,6 +126,18 @@ function getNewCharacter() {
   // getStartingWealth();
   // getMotto();
 };
+
+function removeAllOld() {
+  // removeOldRace();
+  // removeOldClass();
+  // removeOldSubClass();
+  removeOldBackground();
+  // removeOldLang();
+  // removeOldMainWeapon();
+  // removeOldSecondWeapon();
+  // removeOldStartingWealth();
+  // removeOldMotto();
+}
 
 // Second API will draw and present quotes to further flesh out characters. These quotes will be presented as mottos.
 // function getMotto() {
