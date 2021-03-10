@@ -125,19 +125,16 @@ function getAttributes() {
 
 
 // Function to pick random main weapon
-// function getMainWeapon() {
-
-// };
+// Function to ick random secondary weapon
+let weaponArr = ['battleaxe', 'blowgun', 'club', 'crossbow, hand', 'crossbow, heavy', 'crossbow, light', 'dagger', 'dart', 'flail', 'glaive', 'greataxe', 'greatclub', 'greatsword', 'halberd', 'handaxe', 'javelin', 'light hammer', 'lance', 'longbow', 'longsword', 'mace', 'maul', 'morningstar', 'net', 'pike', 'quarterstaff', 'rapier', 'scimitar', 'shortbow', 'shortsword', 'sickle', 'sling', 'spear', 'trident', 'war pick', 'warhammer', 'whip']
+function getMainWeapon() {
+  let randomMainWeapon = weaponArr[Math.floor(Math.random() * weaponArr.length)];
+  let randomSecondWeapon = weaponArr[Math.floor(Math.random() * weaponArr.length)];
+  document.getElementById('g-mainweapon').value += randomMainWeapon;
+  document.getElementById('g-secondweapon').value += randomSecondWeapon;
+};
 function removeOldMainWeapon() {
   document.getElementById('g-mainweapon').value = "";
-};
-
-
-// Function to ick random secondary weapon
-// function getSecondWeapon() {
-
-// };
-function removeOldSecondWeapon() {
   document.getElementById('g-secondweapon').value = "";
 };
 
@@ -170,8 +167,7 @@ function getNewCharacter() {
   // getSubClass();
   getBackground();
   getAttributes();
-  // getMainWeapon();
-  // getSecondWeapon();
+  getMainWeapon();
   // getInventory();
   getStartingWealth();
   // getMotto();
@@ -183,14 +179,13 @@ function removeAllOld() {
   removeOldSubClass();
   removeOldBackground();
   removeOldMainWeapon();
-  removeOldSecondWeapon();
   removeOldInventory();
   removeOldStartingWealth();
   removeOldMotto();
 }
 
 // Second API will draw and present quotes to further flesh out characters. These quotes will be presented as mottos.
-// function getMotto() {
+// async function getMotto() {
 
 // };
 function removeOldMotto() {
