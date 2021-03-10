@@ -66,9 +66,10 @@ let subClasses = {
 // };
 
 let backgrounds = ['Acolyte', 'Charlatan', 'City Watch', 'City Watch (Investigator)', 'Clan Crafter', 'Cloistered Scholar', 'Courtier', 'Criminal', 'Criminal (Spy)', 'Entertainer', 'Entertainer (Gladiator)', 'Faction Agent', 'Far Traveler', 'Folk Hero', 'Guild Artisan', 'Guild Artisan (Guild Merchant)', 'Hermit', 'Inheritor', 'Knight of the Order', 'Mercenary Veteran', 'Noble', 'Noble (Knight)', 'Outlander', 'Sage', 'Sailor', 'Sailor (Pirate)', 'Soldier', 'Urban Bounty Hunter', 'Urchin'];
-// function getBackground() {
-
-// };
+function getBackground() {
+  let randomBackground = backgrounds[Math.floor(Math.random() * backgrounds.length)];
+  document.getElementById('g-background').value += randomBackground;
+};
 // Function to roll attributes
 function getAttributes() {
   let strength = document.querySelector('#g-attStr');
@@ -109,7 +110,7 @@ function getNewCharacter() {
   // getRace();
   // getClass();
   // getSubClass();
-  // getBackground();
+  getBackground();
   getAttributes();
   // getLang();
   // getMainWeapon();
