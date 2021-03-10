@@ -44,18 +44,18 @@ async function getQuotes() {
 // function getRace() {
 
 // };
-// function removeOldRace() {
-
-// };
+function removeOldRace() {
+  document.getElementById('g-race').value = "";
+};
 
 
 // Function to pick random class from API
 // function getClass() {
 
 // };
-// function removeOldClass() {
-
-// };
+function removeOldClass() {
+  document.getElementById('g-class').value = "";
+};
 
 
 let subClasses = {
@@ -75,9 +75,9 @@ let subClasses = {
 // function getSubClass() {
 
 // };
-// function removeOldSubClass() {
-
-// };
+function removeOldSubClass() {
+  document.getElementById('g-subclass').value = "";
+};
 
 
 let backgrounds = ['Acolyte', 'Charlatan', 'City Watch', 'City Watch (Investigator)', 'Clan Crafter', 'Cloistered Scholar', 'Courtier', 'Criminal', 'Criminal (Spy)', 'Entertainer', 'Entertainer (Gladiator)', 'Faction Agent', 'Far Traveler', 'Folk Hero', 'Guild Artisan', 'Guild Artisan (Guild Merchant)', 'Hermit', 'Inheritor', 'Knight of the Order', 'Mercenary Veteran', 'Noble', 'Noble (Knight)', 'Outlander', 'Sage', 'Sailor', 'Sailor (Pirate)', 'Soldier', 'Urban Bounty Hunter', 'Urchin'];
@@ -111,36 +111,36 @@ function getAttributes() {
 // function getLang() {
 
 // };
-// function removeOldLang() {
-
-// };
+function removeOldLang() {
+  document.getElementById('g-languages').value = "";
+};
 
 
 // Function to pick random main weapon
 // function getMainWeapon() {
 
 // };
-// function removeOldMainWeapon() {
-
-// };
+function removeOldMainWeapon() {
+  document.getElementById('g-mainweapon').value = "";
+};
 
 
 // Function to ick random secondary weapon
 // function getSecondWeapon() {
 
 // };
-// function removeOldSecondWeapon() {
-
-// };
+function removeOldSecondWeapon() {
+  document.getElementById('g-secondweapon').value = "";
+};
 
 
 // Function to roll starting wealth
 // function getStartingWealth() {
 
 // };
-// function removeOldStartingWealth() {
-
-// };
+function removeOldStartingWealth() {
+  document.getElementById('g-startingwealth').value = "";
+};
 
 
 // Function to execute all random functions on button click
@@ -158,24 +158,24 @@ function getNewCharacter() {
 };
 
 function removeAllOld() {
-  // removeOldRace();
-  // removeOldClass();
-  // removeOldSubClass();
+  removeOldRace();
+  removeOldClass();
+  removeOldSubClass();
   removeOldBackground();
-  // removeOldLang();
-  // removeOldMainWeapon();
-  // removeOldSecondWeapon();
-  // removeOldStartingWealth();
-  // removeOldMotto();
+  removeOldLang();
+  removeOldMainWeapon();
+  removeOldSecondWeapon();
+  removeOldStartingWealth();
+  removeOldMotto();
 }
 
 // Second API will draw and present quotes to further flesh out characters. These quotes will be presented as mottos.
 // function getMotto() {
 
 // };
-// function removeOldMotto() {
-
-// };
+function removeOldMotto() {
+  document.getElementById('g-motto').value = "";
+};
 
 
 // For the artboard, procure images
