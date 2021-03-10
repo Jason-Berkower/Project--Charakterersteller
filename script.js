@@ -125,7 +125,7 @@ function getAttributes() {
 
 
 // Function to pick random main weapon
-// Function to ick random secondary weapon
+// Function to pick random secondary weapon
 let weaponArr = ['battleaxe', 'blowgun', 'club', 'crossbow, hand', 'crossbow, heavy', 'crossbow, light', 'dagger', 'dart', 'flail', 'glaive', 'greataxe', 'greatclub', 'greatsword', 'halberd', 'handaxe', 'javelin', 'light hammer', 'lance', 'longbow', 'longsword', 'mace', 'maul', 'morningstar', 'net', 'pike', 'quarterstaff', 'rapier', 'scimitar', 'shortbow', 'shortsword', 'sickle', 'sling', 'spear', 'trident', 'war pick', 'warhammer', 'whip']
 function getMainWeapon() {
   let randomMainWeapon = weaponArr[Math.floor(Math.random() * weaponArr.length)];
@@ -170,7 +170,7 @@ function getNewCharacter() {
   getMainWeapon();
   // getInventory();
   getStartingWealth();
-  // getMotto();
+  getMotto();
 };
 
 function removeAllOld() {
@@ -185,9 +185,17 @@ function removeAllOld() {
 }
 
 // Second API will draw and present quotes to further flesh out characters. These quotes will be presented as mottos.
-// async function getMotto() {
-
-// };
+async function getMotto() {
+  try {
+    let nMottos = await axios.get('https://api.quotable.io/random');
+    // console.log(nMottos);
+    let postMotto = nMottos.data.content;
+    console.log(postMotto)
+    document.getElementById('g-motto').value = postMotto;
+  } catch (err) {
+    console.log(err.message);
+  }
+}
 function removeOldMotto() {
   document.getElementById('g-motto').value = "";
 };
