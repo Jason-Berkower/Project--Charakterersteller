@@ -34,9 +34,13 @@ async function getQuotes() {
 }
 
 // Function to pick random race from API
+function getRace() {
 
+};
 // Function to pick random class from API
+function getClass() {
 
+};
 
 let subClasses = {
   barbarian: ['Ancestral Guardian', 'Beast', 'Berserker', 'Storm Herald', 'Totem Warrior', 'Wild Magic', 'Zealot'],
@@ -56,23 +60,45 @@ let subClasses = {
 let backgrounds = ['Acolyte', 'Charlatan', 'City Watch', 'City Watch (Investigator)', 'Clan Crafter', 'Cloistered Scholar', 'Courtier', 'Criminal', 'Criminal (Spy)', 'Entertainer', 'Entertainer (Gladiator)', 'Faction Agent', 'Far Traveler', 'Folk Hero', 'Guild Artisan', 'Guild Artisan (Guild Merchant)', 'Hermit', 'Inheritor', 'Knight of the Order', 'Mercenary Veteran', 'Noble', 'Noble (Knight)', 'Outlander', 'Sage', 'Sailor', 'Sailor (Pirate)', 'Soldier', 'Urban Bounty Hunter', 'Urchin'];
 
 // Function to roll attributes
+function getAttributes() {
 
+};
 // Function to pick random languages
+function getLang() {
+
+};
 
 // Function to pick random main weapon
+function getMainWeapon() {
+
+};
 
 // Function to ick random secondary weapon
+function getSecondWeapon() {
+
+};
 
 // Function to roll starting wealth
+function getStartingWealth() {
+
+};
 
 // Function to execute all random functions on button click
+function getNewCharacter() {
 
+};
 
 // Second API will draw and present quotes to further flesh out characters. These quotes will be presented as mottos.
+function getMotto() {
 
+};
 
 
 // For the artboard, procure images
 // Create array for images
+function getArt() {
+
+};
+
 // Create function to pull random images from array
 // Perhaps use variant of: https://stackoverflow.com/questions/9358090/show-random-images-from-a-folder-without-repeating-using-js-or-php
