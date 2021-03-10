@@ -41,14 +41,11 @@ async function getQuotes() {
 
 
 // Function to pick random race from API
-async function getRace(race) {
+async function getRace() {
   try {
     let dRace = await axios.get('https://www.dnd5eapi.co/api/races');
     let raceArr = dRace.data.results;
-    console.log(raceArr);
-    // let randomRace = raceArr[Math.floor(Math.random() * raceArr.length)];
     let randomRace = raceArr[Math.floor(Math.random() * raceArr.length)];
-    console.log(randomRace, raceArr[randomRace]);
     document.getElementById('g-race').value = randomRace.index;
   } catch (err) {
     console.log(err.message);
@@ -60,9 +57,17 @@ function removeOldRace() {
 
 
 // Function to pick random class from API
-// function getClass() {
-
-// };
+async function getClass() {
+  try {
+    let dClass = await axios.get('https://www.dnd5eapi.co/api/classes');
+    let classArr = dClass.data.results;
+    console.log(classArr);
+    let randomClass = classArr[Math.floor(Math.random() * classArr.length)];
+    document.getElementById('g-class').value = randomClass.index;
+  } catch (err) {
+    console.log(err.message);
+  }
+};
 function removeOldClass() {
   document.getElementById('g-class').value = "";
 };
@@ -159,7 +164,7 @@ function removeOldStartingWealth() {
 // Function to execute all random functions on button click
 function getNewCharacter() {
   getRace();
-  // getClass();
+  getClass();
   // getSubClass();
   getBackground();
   getAttributes();
