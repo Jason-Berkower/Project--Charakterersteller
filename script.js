@@ -1,4 +1,5 @@
 const BaseURL = 'https://www.dnd5eapi.co/api/';
+const btn1 = document.querySelector('#generate');
 
 // D&D5e API Documentation: http://www.dnd5eapi.co/docs/
 
@@ -34,13 +35,13 @@ async function getQuotes() {
 }
 
 // Function to pick random race from API
-function getRace() {
+// function getRace() {
 
-};
+// };
 // Function to pick random class from API
-function getClass() {
+// function getClass() {
 
-};
+// };
 
 let subClasses = {
   barbarian: ['Ancestral Guardian', 'Beast', 'Berserker', 'Storm Herald', 'Totem Warrior', 'Wild Magic', 'Zealot'],
@@ -56,49 +57,76 @@ let subClasses = {
   warlock: ['Archfey Patron', 'Celestial Patron', 'Fathomless Patron', 'Fiend Patron', 'Genie Patron', 'Great Old One Patron', 'Hexblade', 'Undying Patron'],
   wizard: ['Tradition of Abjuration', 'Tradition of Chronurgy', 'Tradition of Conjuration', 'Tradition of Divination', 'Tradition of Enchantment', 'Tradition of Evocation', 'Tradition of Graviturgy', 'Tradition of Illusion', 'Tradition of Necromancy', 'Tradition of the Scribes', 'Tradition of Transmutation', 'Tradition of War']
 };
+// function getSubClass() {
+
+// };
 
 let backgrounds = ['Acolyte', 'Charlatan', 'City Watch', 'City Watch (Investigator)', 'Clan Crafter', 'Cloistered Scholar', 'Courtier', 'Criminal', 'Criminal (Spy)', 'Entertainer', 'Entertainer (Gladiator)', 'Faction Agent', 'Far Traveler', 'Folk Hero', 'Guild Artisan', 'Guild Artisan (Guild Merchant)', 'Hermit', 'Inheritor', 'Knight of the Order', 'Mercenary Veteran', 'Noble', 'Noble (Knight)', 'Outlander', 'Sage', 'Sailor', 'Sailor (Pirate)', 'Soldier', 'Urban Bounty Hunter', 'Urchin'];
+// function getBackground() {
 
+// };
 // Function to roll attributes
 function getAttributes() {
-
+  let strength = document.querySelector('#g-attStr');
+  strength.value = Math.floor(Math.random() * 15) + 3;
+  let dexterity = document.querySelector('#g-attDex');
+  dexterity.value = Math.floor(Math.random() * 15) + 3;
+  let constitution = document.querySelector('#g-attCon');
+  constitution.value = Math.floor(Math.random() * 15) + 3;
+  let intelligence = document.querySelector('#g-attInt');
+  intelligence.value = Math.floor(Math.random() * 15) + 3;
+  let wisdom = document.querySelector('#g-attWis');
+  wisdom.value = Math.floor(Math.random() * 15) + 3;
+  let charisma = document.querySelector('#g-attCha');
+  charisma.value = Math.floor(Math.random() * 15) + 3;
+  console.log(strength, dexterity, constitution, intelligence, wisdom, charisma);
 };
 // Function to pick random languages
-function getLang() {
+// function getLang() {
 
-};
+// };
 
 // Function to pick random main weapon
-function getMainWeapon() {
+// function getMainWeapon() {
 
-};
+// };
 
 // Function to ick random secondary weapon
-function getSecondWeapon() {
+// function getSecondWeapon() {
 
-};
+// };
 
 // Function to roll starting wealth
-function getStartingWealth() {
+// function getStartingWealth() {
 
-};
+// };
 
 // Function to execute all random functions on button click
 function getNewCharacter() {
-
+  // getRace();
+  // getClass();
+  // getSubClass();
+  // getBackground();
+  getAttributes();
+  // getLang();
+  // getMainWeapon();
+  // getSecondWeapon();
+  // getStartingWealth();
+  // getMotto();
 };
 
+btn1.addEventListener('click', getNewCharacter());
 // Second API will draw and present quotes to further flesh out characters. These quotes will be presented as mottos.
-function getMotto() {
+// function getMotto() {
 
-};
+// };
 
 
 // For the artboard, procure images
 // Create array for images
-function getArt() {
+// function getArt() {
 
-};
+// };
 
 // Create function to pull random images from array
 // Perhaps use variant of: https://stackoverflow.com/questions/9358090/show-random-images-from-a-folder-without-repeating-using-js-or-php
