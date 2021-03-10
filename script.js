@@ -61,7 +61,6 @@ async function getClass() {
   try {
     let dClass = await axios.get('https://www.dnd5eapi.co/api/classes');
     let classArr = dClass.data.results;
-    console.log(classArr);
     let randomClass = classArr[Math.floor(Math.random() * classArr.length)];
     document.getElementById('g-class').value = randomClass.index;
   } catch (err) {
@@ -125,15 +124,6 @@ function getAttributes() {
 };
 
 
-// Function to pick random languages
-// function getLang() {
-
-// };
-function removeOldLang() {
-  document.getElementById('g-languages').value = "";
-};
-
-
 // Function to pick random main weapon
 // function getMainWeapon() {
 
@@ -168,7 +158,6 @@ function getNewCharacter() {
   // getSubClass();
   getBackground();
   getAttributes();
-  // getLang();
   // getMainWeapon();
   // getSecondWeapon();
   // getStartingWealth();
@@ -180,7 +169,6 @@ function removeAllOld() {
   removeOldClass();
   removeOldSubClass();
   removeOldBackground();
-  removeOldLang();
   removeOldMainWeapon();
   removeOldSecondWeapon();
   removeOldStartingWealth();
