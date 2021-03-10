@@ -43,8 +43,14 @@ async function getQuotes() {
 // function getRace() {
 
 // };
+// function removeOldRace() {
+
+// };
 // Function to pick random class from API
 // function getClass() {
+
+// };
+// function removeOldClass() {
 
 // };
 
@@ -63,6 +69,9 @@ let subClasses = {
   wizard: ['Tradition of Abjuration', 'Tradition of Chronurgy', 'Tradition of Conjuration', 'Tradition of Divination', 'Tradition of Enchantment', 'Tradition of Evocation', 'Tradition of Graviturgy', 'Tradition of Illusion', 'Tradition of Necromancy', 'Tradition of the Scribes', 'Tradition of Transmutation', 'Tradition of War']
 };
 // function getSubClass() {
+
+// };
+// function removeOldSubClass() {
 
 // };
 
@@ -97,9 +106,15 @@ function getAttributes() {
 // function getLang() {
 
 // };
+// function removeOldLang() {
+
+// };
 
 // Function to pick random main weapon
 // function getMainWeapon() {
+
+// };
+// function removeOldMainWeapon() {
 
 // };
 
@@ -107,9 +122,15 @@ function getAttributes() {
 // function getSecondWeapon() {
 
 // };
+// function removeOldSecondWeapon() {
+
+// };
 
 // Function to roll starting wealth
 // function getStartingWealth() {
+
+// };
+// function removeOldStartingWealth() {
 
 // };
 
@@ -141,6 +162,9 @@ function removeAllOld() {
 
 // Second API will draw and present quotes to further flesh out characters. These quotes will be presented as mottos.
 // function getMotto() {
+
+// };
+// function removeOldMotto() {
 
 // };
 
