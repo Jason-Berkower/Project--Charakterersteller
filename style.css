@@ -149,12 +149,12 @@ body {
 
 /* Footer Section */
 footer {
-  left: 0;
-  bottom: 0;
   width: 100vw;
   text-align: center;
   display: block;
-  /* background-color: #d72638; */
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
   background: linear-gradient(#12355b, #d72638);
   padding: 1px;
   width: 100vw;
