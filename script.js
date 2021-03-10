@@ -140,9 +140,16 @@ function removeOldMainWeapon() {
 
 
 // Function to populate the inventory slots
-// function getInventory(){
-
-// };
+async function getInventory() {
+  let dInventory = await axios.get('https://www.dnd5eapi.co/api/equipment');
+  let inventoryArr = dInventory.data.results;
+  let randomInventory1 = inventoryArr[Math.floor(Math.random() * inventoryArr.length)];
+  let randomInventory2 = inventoryArr[Math.floor(Math.random() * inventoryArr.length)];
+  let randomInventory3 = inventoryArr[Math.floor(Math.random() * inventoryArr.length)];
+  document.getElementById('g-inv1').value = randomInventory1.index;
+  document.getElementById('g-inv2').value = randomInventory2.index;
+  document.getElementById('g-inv3').value = randomInventory3.index;
+};
 function removeOldInventory() {
   document.getElementById('g-inv1').value = "";
   document.getElementById('g-inv2').value = "";
@@ -168,7 +175,7 @@ function getNewCharacter() {
   getBackground();
   getAttributes();
   getMainWeapon();
-  // getInventory();
+  getInventory();
   getStartingWealth();
   getMotto();
 };
@@ -188,9 +195,7 @@ function removeAllOld() {
 async function getMotto() {
   try {
     let nMottos = await axios.get('https://api.quotable.io/random');
-    // console.log(nMottos);
     let postMotto = nMottos.data.content;
-    console.log(postMotto)
     document.getElementById('g-motto').value = postMotto;
   } catch (err) {
     console.log(err.message);
