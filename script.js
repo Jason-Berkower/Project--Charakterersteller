@@ -63,12 +63,16 @@ async function getClass() {
     let classArr = dClass.data.results;
     let randomClass = classArr[Math.floor(Math.random() * classArr.length)];
     document.getElementById('g-class').value = randomClass.index;
+
+    let keys = Object.keys(subClasses);
+    console.log(keys);
   } catch (err) {
     console.log(err.message);
   }
 };
 function removeOldClass() {
   document.getElementById('g-class').value = "";
+  document.getElementById('g-subclass').value = "";
 };
 
 
@@ -87,13 +91,16 @@ let subClasses = {
   wizard: ['Tradition of Abjuration', 'Tradition of Chronurgy', 'Tradition of Conjuration', 'Tradition of Divination', 'Tradition of Enchantment', 'Tradition of Evocation', 'Tradition of Graviturgy', 'Tradition of Illusion', 'Tradition of Necromancy', 'Tradition of the Scribes', 'Tradition of Transmutation', 'Tradition of War']
 };
 // function getSubClass(obj) {
-//   let keys = Object.keys(obj);
+//   let keys = Object.keys(subClasses);
+//   let parentClass = document.querySelector('g-class');
 //   console.log(keys);
-//   return obj[keys[keys.length * Math.random() << 0]];
+//   // console.log(keys[0]); This calls the Barbarian array from the subClasses object.
+//   console.log(parentClass);
+//   // return obj[keys[keys.length * Math.random() << 0]];
 // };
-function removeOldSubClass() {
-  document.getElementById('g-subclass').value = "";
-};
+// function removeOldSubClass() {
+//   document.getElementById('g-subclass').value = "";
+// };
 
 
 // Includes all backgrounds from PHB and SCAG
@@ -124,8 +131,7 @@ function getAttributes() {
 };
 
 
-// Function to pick random main weapon
-// Function to pick random secondary weapon
+// Function to pick random main weapon and random secondary weapon
 let weaponArr = ['battleaxe', 'blowgun', 'club', 'crossbow, hand', 'crossbow, heavy', 'crossbow, light', 'dagger', 'dart', 'flail', 'glaive', 'greataxe', 'greatclub', 'greatsword', 'halberd', 'handaxe', 'javelin', 'light hammer', 'lance', 'longbow', 'longsword', 'mace', 'maul', 'morningstar', 'net', 'pike', 'quarterstaff', 'rapier', 'scimitar', 'shortbow', 'shortsword', 'sickle', 'sling', 'spear', 'trident', 'war pick', 'warhammer', 'whip']
 function getMainWeapon() {
   let randomMainWeapon = weaponArr[Math.floor(Math.random() * weaponArr.length)];
@@ -183,7 +189,7 @@ function getNewCharacter() {
 function removeAllOld() {
   removeOldRace();
   removeOldClass();
-  removeOldSubClass();
+  // removeOldSubClass();
   removeOldBackground();
   removeOldMainWeapon();
   removeOldInventory();
