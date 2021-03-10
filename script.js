@@ -154,9 +154,10 @@ function removeOldInventory() {
 
 
 // Function to roll starting wealth
-// function getStartingWealth() {
-
-// };
+function getStartingWealth() {
+  let gold = document.querySelector('#g-startingwealth');
+  gold.value = Math.floor(Math.random() * 500) + ' gold pieces';
+};
 function removeOldStartingWealth() {
   document.getElementById('g-startingwealth').value = "";
 };
@@ -172,7 +173,7 @@ function getNewCharacter() {
   // getMainWeapon();
   // getSecondWeapon();
   // getInventory();
-  // getStartingWealth();
+  getStartingWealth();
   // getMotto();
 };
 
