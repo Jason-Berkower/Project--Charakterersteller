@@ -41,14 +41,15 @@ async function getQuotes() {
 
 
 // Function to pick random race from API
-async function getRace() {
+async function getRace(race) {
   try {
     let dRace = await axios.get('https://www.dnd5eapi.co/api/races');
     let raceArr = dRace.data.results;
-    // console.log(raceArr);
+    console.log(raceArr);
+    // let randomRace = raceArr[Math.floor(Math.random() * raceArr.length)];
     let randomRace = raceArr[Math.floor(Math.random() * raceArr.length)];
-    console.log(randomRace);
-    document.getElementById('g-race').value += randomRace[raceArr.value];
+    console.log(randomRace, raceArr[randomRace]);
+    document.getElementById('g-race').value = randomRace.index;
   } catch (err) {
     console.log(err.message);
   }

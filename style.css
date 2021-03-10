@@ -17,6 +17,7 @@
 #header h1 {
   text-transform: uppercase;
   color: white;
+  font-size: 64px;
 }
 
 nav {
