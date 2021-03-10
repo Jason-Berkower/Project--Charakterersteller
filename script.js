@@ -16,6 +16,10 @@ window.onload = function () {
   // getImages();
 }
 
+btn1.addEventListener('click', () => {
+  getNewCharacter();
+});
+
 async function grabDungeons() {
   try {
     let dungeons = await axios.get('https://www.dnd5eapi.co/api/');
@@ -79,7 +83,6 @@ function getAttributes() {
   wisdom.value = Math.floor(Math.random() * 15) + 3;
   let charisma = document.querySelector('#g-attCha');
   charisma.value = Math.floor(Math.random() * 15) + 3;
-  console.log(strength, dexterity, constitution, intelligence, wisdom, charisma);
 };
 // Function to pick random languages
 // function getLang() {
@@ -115,7 +118,6 @@ function getNewCharacter() {
   // getMotto();
 };
 
-btn1.addEventListener('click', getNewCharacter());
 // Second API will draw and present quotes to further flesh out characters. These quotes will be presented as mottos.
 // function getMotto() {
 
