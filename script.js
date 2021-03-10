@@ -39,6 +39,7 @@ async function getQuotes() {
   }
 }
 
+
 // Function to pick random race from API
 // function getRace() {
 
@@ -46,6 +47,8 @@ async function getQuotes() {
 // function removeOldRace() {
 
 // };
+
+
 // Function to pick random class from API
 // function getClass() {
 
@@ -53,6 +56,7 @@ async function getQuotes() {
 // function removeOldClass() {
 
 // };
+
 
 let subClasses = {
   barbarian: ['Ancestral Guardian', 'Beast', 'Berserker', 'Storm Herald', 'Totem Warrior', 'Wild Magic', 'Zealot'],
@@ -75,6 +79,7 @@ let subClasses = {
 
 // };
 
+
 let backgrounds = ['Acolyte', 'Charlatan', 'City Watch', 'City Watch (Investigator)', 'Clan Crafter', 'Cloistered Scholar', 'Courtier', 'Criminal', 'Criminal (Spy)', 'Entertainer', 'Entertainer (Gladiator)', 'Faction Agent', 'Far Traveler', 'Folk Hero', 'Guild Artisan', 'Guild Artisan (Guild Merchant)', 'Hermit', 'Inheritor', 'Knight of the Order', 'Mercenary Veteran', 'Noble', 'Noble (Knight)', 'Outlander', 'Sage', 'Sailor', 'Sailor (Pirate)', 'Soldier', 'Urban Bounty Hunter', 'Urchin'];
 function getBackground() {
   let randomBackground = backgrounds[Math.floor(Math.random() * backgrounds.length)];
@@ -83,24 +88,24 @@ function getBackground() {
 function removeOldBackground() {
   document.getElementById('g-background').value = "";
 };
-// function removeOldBackground() {
-//   let background = document.getElementById('g-background');
-// };
+
+
 // Function to roll attributes
 function getAttributes() {
   let strength = document.querySelector('#g-attStr');
-  strength.value = Math.floor(Math.random() * 15) + 3;
+  strength.value = Math.ceil(Math.random() * 15) + 3;
   let dexterity = document.querySelector('#g-attDex');
-  dexterity.value = Math.floor(Math.random() * 15) + 3;
+  dexterity.value = Math.ceil(Math.random() * 15) + 3;
   let constitution = document.querySelector('#g-attCon');
-  constitution.value = Math.floor(Math.random() * 15) + 3;
+  constitution.value = Math.ceil(Math.random() * 15) + 3;
   let intelligence = document.querySelector('#g-attInt');
-  intelligence.value = Math.floor(Math.random() * 15) + 3;
+  intelligence.value = Math.ceil(Math.random() * 15) + 3;
   let wisdom = document.querySelector('#g-attWis');
-  wisdom.value = Math.floor(Math.random() * 15) + 3;
+  wisdom.value = Math.ceil(Math.random() * 15) + 3;
   let charisma = document.querySelector('#g-attCha');
-  charisma.value = Math.floor(Math.random() * 15) + 3;
+  charisma.value = Math.ceil(Math.random() * 15) + 3;
 };
+
 
 // Function to pick random languages
 // function getLang() {
@@ -110,6 +115,7 @@ function getAttributes() {
 
 // };
 
+
 // Function to pick random main weapon
 // function getMainWeapon() {
 
@@ -117,6 +123,7 @@ function getAttributes() {
 // function removeOldMainWeapon() {
 
 // };
+
 
 // Function to ick random secondary weapon
 // function getSecondWeapon() {
@@ -126,6 +133,7 @@ function getAttributes() {
 
 // };
 
+
 // Function to roll starting wealth
 // function getStartingWealth() {
 
@@ -133,6 +141,7 @@ function getAttributes() {
 // function removeOldStartingWealth() {
 
 // };
+
 
 // Function to execute all random functions on button click
 function getNewCharacter() {
