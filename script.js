@@ -142,6 +142,17 @@ function removeOldSecondWeapon() {
 };
 
 
+// Function to populate the inventory slots
+// function getInventory(){
+
+// };
+function removeOldInventory() {
+  document.getElementById('g-inv1').value = "";
+  document.getElementById('g-inv2').value = "";
+  document.getElementById('g-inv3').value = "";
+};
+
+
 // Function to roll starting wealth
 // function getStartingWealth() {
 
@@ -160,6 +171,7 @@ function getNewCharacter() {
   getAttributes();
   // getMainWeapon();
   // getSecondWeapon();
+  // getInventory();
   // getStartingWealth();
   // getMotto();
 };
@@ -171,6 +183,7 @@ function removeAllOld() {
   removeOldBackground();
   removeOldMainWeapon();
   removeOldSecondWeapon();
+  removeOldInventory();
   removeOldStartingWealth();
   removeOldMotto();
 }
