@@ -56,6 +56,19 @@ function removeOldRace() {
 };
 
 
+let barbarian = ['Ancestral Guardian', 'Beast', 'Berserker', 'Storm Herald', 'Totem Warrior', 'Wild Magic', 'Zealot'];
+let bard = ['College of Creation', 'College of Eloquence', 'College of Glamour', 'College of Lore', 'College of Swords', 'College of Valor', 'College of Whispers'];
+let cleric = ['Arcana Domain', 'Death Domain', 'Forge Domain', 'Grave Domain', 'Knowledge Domain', 'Life Domain', 'Light Domain', 'Nature Domain', 'Order Domain', 'Peace Order', 'Tempest Domain', 'Trickery Domain', 'Twilight Domain', 'War Domain'];
+let druid = ['Circle of Dreams', 'Circle of the Land', 'Circle of the Moon', 'Circle of the Shepherd', 'Circle of Spores', 'Circle of Stars', 'Circle of Wildfire'];
+let fighter = ['Arcane Archer', 'Battle Master', 'Cavalier', 'Champion', 'Echo Knight', 'Eldritch Knight', 'Psi Warrior', 'Purple Dragon Knight', 'Rune Knight', 'Samurai'];
+let monk = ['Tradition of the Astral Self', 'Tradition of the Drunken Master', 'Tradition of the Four Elements', 'Tradition of the Kensai', 'Tradition of the Long Death', 'Tradition of Mercy', 'Tradition of the Open Hand', 'Tradition of the Shadow', 'Tradition of the Sun Soul'];
+let paladin = ['Oath of the Ancients', 'Oath of Conquest', 'Oath of the Crown', 'Oath of Devotion', 'Oath of Glory', 'Oathbreaker', 'Oath of Redemption', 'Oath of Vengeance', 'Oath of the Watchers'];
+let ranger = ['Beast Master', 'Fey Wanderer', 'Gloom Stalker', 'Horizon Walker', 'Hunter', 'Monster Slayer', 'Swarmkeeper'];
+let rogue = ['Arcane Trickster', 'Assassin', 'Inquisitive', 'Mastermind', 'Phantom', 'Scout', 'Soulknife', 'Swashbuckler', 'Thief'];
+let sorcerer = ['Aberrant Mind', 'Clockwork Soul', 'Divine Soul', 'Draconic', 'Shadow', 'Storm', 'Wild'];
+let warlock = ['Archfey Patron', 'Celestial Patron', 'Fathomless Patron', 'Fiend Patron', 'Genie Patron', 'Great Old One Patron', 'Hexblade', 'Undying Patron'];
+let wizard = ['Tradition of Abjuration', 'Tradition of Chronurgy', 'Tradition of Conjuration', 'Tradition of Divination', 'Tradition of Enchantment', 'Tradition of Evocation', 'Tradition of Graviturgy', 'Tradition of Illusion', 'Tradition of Necromancy', 'Tradition of the Scribes', 'Tradition of Transmutation', 'Tradition of War'];
+
 // Function to pick random class from API
 async function getClass() {
   try {
@@ -63,25 +76,45 @@ async function getClass() {
     let classArr = dClass.data.results;
     let randomClass = classArr[Math.floor(Math.random() * classArr.length)];
     document.getElementById('g-class').value = randomClass.index;
-
-    let keys = Object.values(subClasses);
-    // console.log(keys);
-    for (let i = 0; i < keys.length; i++) {
-      let classCompare = randomClass.index;
-      // console.log(classCompare);
-      if (keys.length[i] === classCompare) {
-        let randomSubCl = keys[Math.floor(Math.random() * keys.length)];
-        document.getElementById('g-subclass').value = randomSubCl;
-        console.log(randomSubCl);
-        break;
-      } else {
-        console.log('This is not working.');
-        break;
-      };
-      // if (randomClass.index === keys[0]) {
-      //   let randomSubClass = inventoryArr[Math.floor(Math.random() * inventoryArr.length)];
-      //   document.getElementById('g-inv1').value = randomInventory1.index;
-      // };
+    let currentClass = randomClass.index;
+    if (currentClass === 'barbarian') {
+      let randomSubCl = barbarian[Math.floor(Math.random() * barbarian.length)];
+      document.getElementById('g-subclass').value = randomSubCl;
+    } else if (currentClass === 'bard') {
+      let randomSubCl = bard[Math.floor(Math.random() * bard.length)];
+      document.getElementById('g-subclass').value = randomSubCl;
+    } else if (currentClass === 'cleric') {
+      let randomSubCl = cleric[Math.floor(Math.random() * cleric.length)];
+      document.getElementById('g-subclass').value = randomSubCl;
+    } else if (currentClass === 'druid') {
+      let randomSubCl = druid[Math.floor(Math.random() * druid.length)];
+      document.getElementById('g-subclass').value = randomSubCl;
+    } else if (currentClass === 'fighter') {
+      let randomSubCl = fighter[Math.floor(Math.random() * fighter.length)];
+      document.getElementById('g-subclass').value = randomSubCl;
+    } else if (currentClass === 'monk') {
+      let randomSubCl = monk[Math.floor(Math.random() * monk.length)];
+      document.getElementById('g-subclass').value = randomSubCl;
+    } else if (currentClass === 'paladin') {
+      let randomSubCl = paladin[Math.floor(Math.random() * paladin.length)];
+      document.getElementById('g-subclass').value = randomSubCl;
+    } else if (currentClass === 'ranger') {
+      let randomSubCl = ranger[Math.floor(Math.random() * ranger.length)];
+      document.getElementById('g-subclass').value = randomSubCl;
+    } else if (currentClass === 'rogue') {
+      let randomSubCl = rogue[Math.floor(Math.random() * rogue.length)];
+      document.getElementById('g-subclass').value = randomSubCl;
+    } else if (currentClass === 'sorcerer') {
+      let randomSubCl = sorcerer[Math.floor(Math.random() * sorcerer.length)];
+      document.getElementById('g-subclass').value = randomSubCl;
+    } else if (currentClass === 'warlock') {
+      let randomSubCl = warlock[Math.floor(Math.random() * warlock.length)];
+      document.getElementById('g-subclass').value = randomSubCl;
+    } else if (currentClass === 'wizard') {
+      let randomSubCl = wizard[Math.floor(Math.random() * wizard.length)];
+      document.getElementById('g-subclass').value = randomSubCl;
+    } else {
+      console.log('Something went wrong!');
     };
   } catch (err) {
     console.log(err.message);
@@ -90,22 +123,6 @@ async function getClass() {
 function removeOldClass() {
   document.getElementById('g-class').value = "";
   document.getElementById('g-subclass').value = "";
-};
-
-
-let subClasses = {
-  barbarian: ['Ancestral Guardian', 'Beast', 'Berserker', 'Storm Herald', 'Totem Warrior', 'Wild Magic', 'Zealot'],
-  bard: ['College of Creation', 'College of Eloquence', 'College of Glamour', 'College of Lore', 'College of Swords', 'College of Valor', 'College of Whispers'],
-  cleric: ['Arcana Domain', 'Death Domain', 'Forge Domain', 'Grave Domain', 'Knowledge Domain', 'Life Domain', 'Light Domain', 'Nature Domain', 'Order Domain', 'Peace Order', 'Tempest Domain', 'Trickery Domain', 'Twilight Domain', 'War Domain'],
-  druid: ['Circle of Dreams', 'Circle of the Land', 'Circle of the Moon', 'Circle of the Shepherd', 'Circle of Spores', 'Circle of Stars', 'Circle of Wildfire'],
-  fighter: ['Arcane Archer', 'Battle Master', 'Cavalier', 'Champion', 'Echo Knight', 'Eldritch Knight', 'Psi Warrior', 'Purple Dragon Knight', 'Rune Knight', 'Samurai'],
-  monk: ['Tradition of the Astral Self', 'Tradition of the Drunken Master', 'Tradition of the Four Elements', 'Tradition of the Kensai', 'Tradition of the Long Death', 'Tradition of Mercy', 'Tradition of the Open Hand', 'Tradition of the Shadow', 'Tradition of the Sun Soul'],
-  paladin: ['Oath of the Ancients', 'Oath of Conquest', 'Oath of the Crown', 'Oath of Devotion', 'Oath of Glory', 'Oathbreaker', 'Oath of Redemption', 'Oath of Vengeance', 'Oath of the Watchers'],
-  ranger: ['Beast Master', 'Fey Wanderer', 'Gloom Stalker', 'Horizon Walker', 'Hunter', 'Monster Slayer', 'Swarmkeeper'],
-  rogue: ['Arcane Trickster', 'Assassin', 'Inquisitive', 'Mastermind', 'Phantom', 'Scout', 'Soulknife', 'Swashbuckler', 'Thief'],
-  sorcerer: ['Aberrant Mind', 'Clockwork Soul', 'Divine Soul', 'Draconic', 'Shadow', 'Storm', 'Wild'],
-  warlock: ['Archfey Patron', 'Celestial Patron', 'Fathomless Patron', 'Fiend Patron', 'Genie Patron', 'Great Old One Patron', 'Hexblade', 'Undying Patron'],
-  wizard: ['Tradition of Abjuration', 'Tradition of Chronurgy', 'Tradition of Conjuration', 'Tradition of Divination', 'Tradition of Enchantment', 'Tradition of Evocation', 'Tradition of Graviturgy', 'Tradition of Illusion', 'Tradition of Necromancy', 'Tradition of the Scribes', 'Tradition of Transmutation', 'Tradition of War']
 };
 
 
@@ -123,17 +140,17 @@ function removeOldBackground() {
 // Function to roll attributes
 function getAttributes() {
   let strength = document.querySelector('#g-attStr');
-  strength.value = Math.ceil(Math.random() * 15) + 3;
+  strength.value = Math.floor(Math.random() * 10) + 8;
   let dexterity = document.querySelector('#g-attDex');
-  dexterity.value = Math.ceil(Math.random() * 15) + 3;
+  dexterity.value = Math.floor(Math.random() * 10) + 8;
   let constitution = document.querySelector('#g-attCon');
-  constitution.value = Math.ceil(Math.random() * 15) + 3;
+  constitution.value = Math.floor(Math.random() * 10) + 8;
   let intelligence = document.querySelector('#g-attInt');
-  intelligence.value = Math.ceil(Math.random() * 15) + 3;
+  intelligence.value = Math.floor(Math.random() * 10) + 8;
   let wisdom = document.querySelector('#g-attWis');
-  wisdom.value = Math.ceil(Math.random() * 15) + 3;
+  wisdom.value = Math.floor(Math.random() * 10) + 8;
   let charisma = document.querySelector('#g-attCha');
-  charisma.value = Math.ceil(Math.random() * 15) + 3;
+  charisma.value = Math.floor(Math.random() * 10) + 8;
 };
 
 
