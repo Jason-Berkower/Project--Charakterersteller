@@ -150,15 +150,17 @@ body {
 
 /* Footer Section */
 footer {
+  display: inline-block;
   width: 100vw;
   text-align: center;
-  display: block;
+  position: fixed;
   bottom: 0px;
   left: 0px;
   background: linear-gradient(#12355b, #d72638);
   padding: 1px;
   width: 100vw;
   margin-top: 50px;
+  margin-bottom: 0px;
 }
 
 footer p {
