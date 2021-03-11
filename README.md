@@ -72,5 +72,23 @@ https://miro.com/app/board/o9J_lQwWurk=/
 
 ## Code Snippet
 
+The following snippet of code pulls the alignments array from the D&D5e API, pushes it into a math.random function, return a random selection from said array, then post it to the relevant text input. Likewise, the snippet also includes the function used to erase the previous alignment entry on each subsequent click of the generator button.
+
+```
+async function getAlignment() {
+  try {
+    let dAlign = await axios.get('https://www.dnd5eapi.co/api/alignments');
+    let alignArr = dAlign.data.results;
+    let randomAlignment = alignArr[Math.floor(Math.random() * alignArr.length)];
+    document.getElementById('g-alignment').value = randomAlignment.index;
+  } catch (err) {
+    console.log(err.message);
+  };
+};
+function removeOldAlignment() {
+  document.getElementById('g-alignment').value = "";
+};
+```
+
 ## Changelog
 
