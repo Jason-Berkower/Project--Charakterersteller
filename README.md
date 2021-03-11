@@ -72,7 +72,7 @@ https://miro.com/app/board/o9J_lQwWurk=/
 
 ## Code Snippet
 
-The following snippet of code pulls the alignments array from the D&D5e API, pushes it into a math.random function, return a random selection from said array, then post it to the relevant text input. Likewise, the snippet also includes the function used to erase the previous alignment entry on each subsequent click of the generator button.
+The following snippet of code pulls the alignments array from the D&D5e API, pushes it into a math.random function, returns a random selection from said array, then posts it to the relevant text input. Likewise, this snippet also includes the function used to erase the previous alignment entry on each subsequent click of the generator button.
 
 ```
 async function getAlignment() {
