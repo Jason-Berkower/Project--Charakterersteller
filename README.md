@@ -57,18 +57,20 @@ https://miro.com/app/board/o9J_lQwWurk=/
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Fleshing out Concept | H | 2hrs| — | — |
-| Setting up HTML | M | 2hrs | — | — |
-| Adding Form w/ CSS | H | 4hrs | — | — |
-| Procure Art | L | 2hrs | — | — |
-| Non-API JS | M | 3hrs | — | — |
-| Working with First API | H | 3hrs | — | — |
-| Working with Second API | H | 3hrs | — | — |
-| Post-API JS | H | 3hrs | — | — |
-| Debugging | H | 4hrs | — | — |
-| Post-MVP Goals | M | 6hrs | — | — |
-| Post-MVP Debugging | M | 4hrs | — | — |
-| Total |  | 36hrs |  | — |
+| Fleshing out Concept | H | 2hrs| 2hrs | 2hrs |
+| Setting up HTML | M | 2hrs | 4hrs | 4hrs |
+| Adding Form w/ CSS | H | 4hrs | 6hrs | 6hrs |
+| Procure Art | L | 2hrs | 1hrs | 1hrs |
+| Non-API JS | M | 3hrs | 2hrs | 2hrs |
+| Working with First API | H | 3hrs | 3hrs | 3hrs |
+| Working with Second API | H | 3hrs | 1hrs | 1hrs |
+| Post-API JS | H | 3hrs | 3hrs | 3hrs |
+| Debugging | H | 4hrs | 3hrs | 3hrs |
+| Post-MVP Goals | M | 6hrs | 5hrs | 5hrs |
+| Post-MVP Debugging | M | 4hrs | 3hrs | 3hrs |
+| Total |  | 36hrs |  | 33hrs |
+
+## Code Snippet
 
 ## Changelog
 

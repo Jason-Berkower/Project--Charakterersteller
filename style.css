@@ -21,8 +21,9 @@
 }
 
 nav {
-  display: block;
-  text-align: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   padding-right: 50px;
   word-spacing: 200px;
   text-transform: uppercase;
@@ -162,6 +163,9 @@ body {
 @media only screen and (max-width: 600px) {
   body {
     background-color: #841d99;
+  }
+  #generate {
+    background-color: #12355B;
   }
 }
 
