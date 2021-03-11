@@ -126,6 +126,21 @@ function removeOldClass() {
 };
 
 
+// Function to roll alignment
+async function getAlignment() {
+  try {
+    let dAlign = await axios.get('https://www.dnd5eapi.co/api/alignments');
+    let alignArr = dAlign.data.results;
+    let randomAlignment = alignArr[Math.floor(Math.random() * alignArr.length)];
+    document.getElementById('g-alignment').value = randomAlignment.index;
+  } catch (err) {
+    console.log(err.message);
+  };
+};
+function removeOldAlignment() {
+  document.getElementById('g-alignment').value = "";
+};
+
 // Includes all backgrounds from PHB and SCAG
 let backgrounds = ['Acolyte', 'Charlatan', 'City Watch', 'City Watch (Investigator)', 'Clan Crafter', 'Cloistered Scholar', 'Courtier', 'Criminal', 'Criminal (Spy)', 'Entertainer', 'Entertainer (Gladiator)', 'Faction Agent', 'Far Traveler', 'Folk Hero', 'Guild Artisan', 'Guild Artisan (Guild Merchant)', 'Hermit', 'Inheritor', 'Knight of the Order', 'Mercenary Veteran', 'Noble', 'Noble (Knight)', 'Outlander', 'Sage', 'Sailor', 'Sailor (Pirate)', 'Soldier', 'Urban Bounty Hunter', 'Urchin'];
 function getBackground() {
@@ -140,17 +155,17 @@ function removeOldBackground() {
 // Function to roll attributes
 function getAttributes() {
   let strength = document.querySelector('#g-attStr');
-  strength.value = Math.floor(Math.random() * 10) + 8;
+  strength.value = `${Math.floor(Math.random() * 10) + 8} Strength`;
   let dexterity = document.querySelector('#g-attDex');
-  dexterity.value = Math.floor(Math.random() * 10) + 8;
+  dexterity.value = `${Math.floor(Math.random() * 10) + 8} Dexterity`;
   let constitution = document.querySelector('#g-attCon');
-  constitution.value = Math.floor(Math.random() * 10) + 8;
+  constitution.value = `${Math.floor(Math.random() * 10) + 8} Constitution`;
   let intelligence = document.querySelector('#g-attInt');
-  intelligence.value = Math.floor(Math.random() * 10) + 8;
+  intelligence.value = `${Math.floor(Math.random() * 10) + 8} Intelligence`;
   let wisdom = document.querySelector('#g-attWis');
-  wisdom.value = Math.floor(Math.random() * 10) + 8;
+  wisdom.value = `${Math.floor(Math.random() * 10) + 8} Wisdom`;
   let charisma = document.querySelector('#g-attCha');
-  charisma.value = Math.floor(Math.random() * 10) + 8;
+  charisma.value = `${Math.floor(Math.random() * 10) + 8} Charisma`;
 };
 
 
@@ -200,7 +215,7 @@ function removeOldStartingWealth() {
 function getNewCharacter() {
   getRace();
   getClass();
-  // getSubClass();
+  getAlignment();
   getBackground();
   getAttributes();
   getMainWeapon();
@@ -212,7 +227,7 @@ function getNewCharacter() {
 function removeAllOld() {
   removeOldRace();
   removeOldClass();
-  // removeOldSubClass();
+  removeOldAlignment();
   removeOldBackground();
   removeOldMainWeapon();
   removeOldInventory();
