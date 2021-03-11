@@ -64,11 +64,28 @@ async function getClass() {
     let randomClass = classArr[Math.floor(Math.random() * classArr.length)];
     document.getElementById('g-class').value = randomClass.index;
 
-    let keys = Object.keys(subClasses);
-    console.log(keys);
+    let keys = Object.values(subClasses);
+    // console.log(keys);
+    for (let i = 0; i < keys.length; i++) {
+      let classCompare = randomClass.index;
+      // console.log(classCompare);
+      if (keys.length[i] === classCompare) {
+        let randomSubCl = keys[Math.floor(Math.random() * keys.length)];
+        document.getElementById('g-subclass').value = randomSubCl;
+        console.log(randomSubCl);
+        break;
+      } else {
+        console.log('This is not working.');
+        break;
+      };
+      // if (randomClass.index === keys[0]) {
+      //   let randomSubClass = inventoryArr[Math.floor(Math.random() * inventoryArr.length)];
+      //   document.getElementById('g-inv1').value = randomInventory1.index;
+      // };
+    };
   } catch (err) {
     console.log(err.message);
-  }
+  };
 };
 function removeOldClass() {
   document.getElementById('g-class').value = "";
@@ -90,17 +107,6 @@ let subClasses = {
   warlock: ['Archfey Patron', 'Celestial Patron', 'Fathomless Patron', 'Fiend Patron', 'Genie Patron', 'Great Old One Patron', 'Hexblade', 'Undying Patron'],
   wizard: ['Tradition of Abjuration', 'Tradition of Chronurgy', 'Tradition of Conjuration', 'Tradition of Divination', 'Tradition of Enchantment', 'Tradition of Evocation', 'Tradition of Graviturgy', 'Tradition of Illusion', 'Tradition of Necromancy', 'Tradition of the Scribes', 'Tradition of Transmutation', 'Tradition of War']
 };
-// function getSubClass(obj) {
-//   let keys = Object.keys(subClasses);
-//   let parentClass = document.querySelector('g-class');
-//   console.log(keys);
-//   // console.log(keys[0]); This calls the Barbarian array from the subClasses object.
-//   console.log(parentClass);
-//   // return obj[keys[keys.length * Math.random() << 0]];
-// };
-// function removeOldSubClass() {
-//   document.getElementById('g-subclass').value = "";
-// };
 
 
 // Includes all backgrounds from PHB and SCAG
