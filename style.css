@@ -7,7 +7,7 @@
 #header {
   display: inline-block;
   /* background-color: #d72638; */
-  background: linear-gradient(#d72638, #12355b);
+  background: linear-gradient(#d72638, transparent);
   padding: 10px;
   width: 100vw;
   margin: 0;
@@ -161,7 +161,7 @@ footer {
   position: fixed;
   bottom: 0px;
   left: 0px;
-  background: linear-gradient(#12355b, #d72638);
+  background: linear-gradient(transparent, #d72638);
   padding: 1px;
   width: 100vw;
   margin-top: 50px;
