@@ -153,7 +153,6 @@ footer {
   width: 100vw;
   text-align: center;
   display: block;
-  position: fixed;
   bottom: 0px;
   left: 0px;
   background: linear-gradient(#12355b, #d72638);
