@@ -247,7 +247,7 @@ function removeOldMotto() {
 };
 
 
-// For the art board, procure images
+///////// For the art board, procure images //////////
 // Create array for images
 // function getArt() {
 
