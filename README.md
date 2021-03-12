@@ -131,10 +131,12 @@ function removeOldAlignment() {
 - Added motto field for random generation.
 - D&D5e API loaded.
 - Stylized footer.
+- Added all initial CSS elements.
 - Linked all html pages with JS and CSS files.
 - Linked all html pages.
 
 ### Version 0.4 - "Brigand"
+- Added all initial HTML elements.
 - Entry fields for generation placed.
 - Built 'Generate' button.
 - Established boilerplate for HTML.
