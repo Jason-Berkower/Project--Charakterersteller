@@ -68,9 +68,9 @@ https://miro.com/app/board/o9J_lQwWurk=/
 | Working with Second API | H | 3hrs | 1hrs | 1hrs |
 | Post-API JS | H | 3hrs | 3hrs | 3hrs |
 | Debugging | H | 4hrs | 3hrs | 3hrs |
-| Post-MVP Goals | M | 6hrs | 5hrs | 5hrs |
+| Post-MVP Goals | M | 6hrs | 5hrs | 6hrs |
 | Post-MVP Debugging | M | 4hrs | 3hrs | 3hrs |
-| Total |  | 36hrs |  | 33hrs |
+| Total |  | 36hrs |  | 34hrs |
 
 ## Code Snippet
 
