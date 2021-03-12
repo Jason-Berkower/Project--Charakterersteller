@@ -245,13 +245,3 @@ async function getMotto() {
 function removeOldMotto() {
   document.getElementById('g-motto').value = "";
 };
-
-
-///////// For the art board, procure images //////////
-// Create array for images
-// function getArt() {
-
-// };
-
-// Create function to pull random images from array
-// Perhaps use variant of: https://stackoverflow.com/questions/9358090/show-random-images-from-a-folder-without-repeating-using-js-or-php

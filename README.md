@@ -46,8 +46,10 @@ https://imgur.com/a/BG9Q1CI
 #### PostMVP  
 
 - Add second API (possibly a third).
-- Add a random art component to further inspiration.
-- Allow the user to download a .txt file including their randomly generated character.
+- ~~Add a random art component to further inspiration.~~
+- ~~Allow the user to download a .txt file including their randomly generated character.~~
+- Add an instance of the ':hover' selector.
+- Add links to external D&D resources that open in a new tab.
 
 ## Priority Matrix
 

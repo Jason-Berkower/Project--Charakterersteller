@@ -6,7 +6,6 @@
 /* Header Section */
 #header {
   display: inline-block;
-  /* background-color: #d72638; */
   background: linear-gradient(#d72638, transparent);
   padding: 10px;
   width: 100vw;
@@ -29,12 +28,13 @@ body {
 }
 
 #Introduction {
-  margin-left: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 #button1 {
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 75px;
 }
 
 #generate {
@@ -48,66 +48,79 @@ body {
   border-radius: 10px;
   border-color: transparent;
 }
+
+
 /* Content Section */
+
+#Generation {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 #generate-race {
   margin-left: 50px;
+  margin-right: 20px;
   margin-bottom: 20px;
 }
 
 #generate-class {
   margin-left: 50px;
   margin-bottom: 20px;
+  margin-right: 20px;
 }
 
 #generate-subclass {
   margin-left: 50px;
   margin-bottom: 20px;
+  margin-right: 20px;
 }
 
 #generate-alignment {
   margin-left: 50px;
   margin-bottom: 20px;
+  margin-right: 20px;
 }
 
 #generate-background {
   margin-left: 50px;
   margin-bottom: 20px;
+  margin-right: 20px;
 }
 
 #attribute-array {
   margin-left: 50px;
   margin-bottom: 20px;
+  margin-right: 20px;
 }
 
 #generate-mainweapon {
   margin-left: 50px;
   margin-bottom: 20px;
+  margin-right: 20px;
 }
 
 #generate-secondweapon {
   margin-left: 50px;
   margin-bottom: 20px;
+  margin-right: 20px;
 }
 
 #generate-inventory{
   margin-left: 50px;
   margin-bottom: 20px;
+  margin-right: 20px;
 }
 
 #generate-startingwealth {
   margin-left: 50px;
   margin-bottom: 20px;
+  margin-right: 20px;
 }
 
 #generate-motto {
   margin-left: 50px;
   margin-bottom: 20px;
-}
-
-#generate-favMonster {
-  margin-left: 50px;
-  margin-bottom: 20px;
+  margin-right: 20px;
 }
 
 #button2 {
@@ -130,11 +143,38 @@ body {
   text-align: center;
 }
 
+#g-subclass {
+  width: 225px;
+}
+
+#g-motto {
+  width: 600px;
+}
+
 #disclaimer {
   margin-left: 80px;
   margin-right: 80px;
   text-align: center;
+  margin-top: 200px;
 }
+
+#additional-resources {
+  margin-left: 50px;
+  margin-top: 150px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color:#d72638;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
 
 @media only screen and (max-width: 600px) {
   body {
@@ -144,5 +184,3 @@ body {
     background-color: #12355B;
   }
 }
-
-/* Footer Section */
