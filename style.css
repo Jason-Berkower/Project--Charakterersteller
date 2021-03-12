@@ -148,6 +148,12 @@ body {
   text-align: center;
 }
 
+#disclaimer {
+  margin-left: 80px;
+  margin-right: 80px;
+  text-align: center;
+}
+
 @media only screen and (max-width: 600px) {
   body {
     background-color: #841d99;
