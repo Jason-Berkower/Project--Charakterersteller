@@ -8,6 +8,10 @@ Jason's Character Generator
 
 This project intends to serve as a foray into the realm of random character generators for the popular tabletop roleplaying game, Dungeons and Dragons. Interaction with this app will see users stepping away with the information they'd need to inhabit and develop a fledgling adventurer. Likewise, this project can be used by non-TTRPG users to generate characters for their next creative endeavor.
 
+## Site Links
+### [Github Pages](https://jason-berkower.github.io/Project--Charakterersteller/)
+### [Alternative - Surge](http://jasonscharactergenerator.surge.sh/)
+
 ## API and Data Sample
 
 Sample pulled from the public D&D 5e API.
