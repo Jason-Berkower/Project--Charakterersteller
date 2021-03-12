@@ -2,7 +2,7 @@
 
 ## Project Name
 
-Charakterersteller (Working Name)
+Jason's Character Generator
 
 ## Project Description
 
