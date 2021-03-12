@@ -163,6 +163,16 @@ body {
   margin-top: 150px;
 }
 
+#ampersand {
+  display: flex;
+  justify-content: center;
+}
+
+#amper {
+  height: 600px;
+  width: auto;
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -174,6 +184,10 @@ a:hover {
   font-size: 20px;
 }
 
+#amper:hover {
+  height: 650px;
+  width: auto;
+}
 
 
 @media only screen and (max-width: 600px) {
@@ -182,5 +196,14 @@ a:hover {
   }
   #generate {
     background-color: #12355B;
+  }
+  #amper {
+    background-color: #d72638;
+    border-radius: 100%;
+  }
+  a:hover {
+    color: white;
+    font-weight: bolder;
+    font-size: 24px;
   }
 }
