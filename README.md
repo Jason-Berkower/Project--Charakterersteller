@@ -94,7 +94,7 @@ function removeOldAlignment() {
 
 ## Changelog
 
-### Version 1.0 - "Beholder"
+### (03/11/21) Version 1.0 - "Beholder"
 - Final commit.
 - Final tweaks.
 - Mounted Ampersand image.
@@ -108,7 +108,7 @@ function removeOldAlignment() {
 - Removed download button and footer.
 - Random Subclasses operational.
 
-### Version 0.8 - "Hill Giant"
+### (03/10/21) Version 0.8 - "Hill Giant"
 - Consolidated class and subclass function framework.
 - Random Inventory operational.
 - Random Motto operational.
@@ -125,7 +125,7 @@ function removeOldAlignment() {
 - Established bones of each needed function.
 - Added subclasses object and backgrounds array.
 
-### Version 0.6 - "Hobgoblin"
+### (03/09/21) Version 0.6 - "Hobgoblin"
 - Prepped art gallery for population.
 - Quotable API loaded.
 - Added motto field for random generation.
@@ -135,7 +135,7 @@ function removeOldAlignment() {
 - Linked all html pages with JS and CSS files.
 - Linked all html pages.
 
-### Version 0.4 - "Brigand"
+### (03/08/21) Version 0.4 - "Brigand"
 - Added all initial HTML elements.
 - Entry fields for generation placed.
 - Built 'Generate' button.
@@ -146,5 +146,5 @@ function removeOldAlignment() {
 - Added outstanding elements to readme.
 - Minor html tweaks.
 
-### Version 0.2 - "Patron"
+### (03/07/21) Version 0.2 - "Patron"
 - Initial setup of repo and readme.
