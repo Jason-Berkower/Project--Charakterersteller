@@ -68,7 +68,7 @@ https://miro.com/app/board/o9J_lQwWurk=/
 | Working with Second API | H | 3hrs | 1hrs | 1hrs |
 | Post-API JS | H | 3hrs | 3hrs | 3hrs |
 | Debugging | H | 4hrs | 3hrs | 3hrs |
-| Post-MVP Goals | M | 6hrs | 5hrs | 8hrs |
+| Post-MVP Goals | M | 6hrs | 8hrs | 8hrs |
 | Post-MVP Debugging | M | 4hrs | 3hrs | 3hrs |
 | Total |  | 36hrs |  | 36hrs |
 
@@ -94,3 +94,55 @@ function removeOldAlignment() {
 
 ## Changelog
 
+### Version 1.0 - "Beholder"
+- Final commit.
+- Final tweaks.
+- Mounted Ampersand image.
+- Removed nav.
+- Added and removed resources page. Implemented resource links on main page.
+- Removed art board due to time constraints.
+- Added code snippet to readme.
+- Flex tweaks made to style.css.
+- Added media queries.
+- Removed about.html.
+- Removed download button and footer.
+- Random Subclasses operational.
+
+### Version 0.8 - "Hill Giant"
+- Consolidated class and subclass function framework.
+- Random Inventory operational.
+- Random Motto operational.
+- Random Weapons operational.
+- Random Starting Wealth operational.
+- Removed language field.
+- Random Class operational.
+- Random Race operational.
+- Code for value removal applied to each function.
+- Can now remove value from text entry.
+- Random Background operational.
+- Made 'generate' button operational.
+- Random Attributes operational.
+- Established bones of each needed function.
+- Added subclasses object and backgrounds array.
+
+### Version 0.6 - "Hobgoblin"
+- Prepped art gallery for population.
+- Quotable API loaded.
+- Added motto field for random generation.
+- D&D5e API loaded.
+- Stylized footer.
+- Linked all html pages with JS and CSS files.
+- Linked all html pages.
+
+### Version 0.4 - "Brigand"
+- Entry fields for generation placed.
+- Built 'Generate' button.
+- Established boilerplate for HTML.
+- Added base font specifications.
+- Created index.html, script.js, style.css.
+- Applied pitch feedback to readme.
+- Added outstanding elements to readme.
+- Minor html tweaks.
+
+### Version 0.2 - "Patron"
+- Initial setup of repo and readme.
